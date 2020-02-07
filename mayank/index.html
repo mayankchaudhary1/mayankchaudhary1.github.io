@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Redesign</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="outer" class="outer">
+
+        <section id="header" class="header">
+            <img id="logo" src="./images/logo/logo.png" alt="Logo"></img>
+        </section>
+
+        <section id="middle" class="middle">
+
+            <section id="midText">
+                <p id="midText1"><b>Want to be your own boss?</b></p>
+
+                <p id="midText2"> Start today and make up to $30/hr driving your own vehicle with Dash!
+
+                    <br>
+                    <br> Safe. Secure. Reliable. </p>
+
+            </section>
+
+            <img id="scooter" src="./images/bg-image/scooter.svg" alt="Scooter">
+
+            <section id="applyForm" class="applyForm">
+
+                <p id="applyNow"><b>Apply Now</b>
+                </p>
+
+                <p>Enter your info below to get started.
+                </p>
+                <!-- Using input tag to create user input field -->
+                <input class="formText" type="text" name="FirstName" placeholder="First name">
+                <input class="formText" type="text" name="LastName" placeholder="Last name">
+                <input class="formText" type="email" name="Email" placeholder="Email address">
+                <input class="formText" type="text" name="Phone" placeholder="Phone number">
+
+                <div>
+                    <!-- Using input tag type checkbox to create a checkbox -->
+                    <input type="checkbox"> I agree to dash terms</div>
+                <button class="applyButton"><span class="buttonText"><b>DRIVE WITH US</b></span>
+                </button>
+                <!-- Using a href to crate a text link -->
+                <div>Already applied? <a href="https://www.google.com" class="applicationStatusText"> Check your application status here</a>
+                    <div>
+            </section>
+        </section>
+
+        <section id="footer" class="footer">
+            <section id="calculation" class="calculation">
+                <section id="calText" class="calText">
+                    <p><b>See how much you can earn with Dash.</b></p>
+                    <p>how many hours do you want to drive with us this week?</p>
+                </section>
+                <section id="calInput" class="calInput">
+
+                    <input id="hoursText" type="text" name="Hours" placeholder="Hours">
+                    <input id="cityText" type="text" name="City" placeholder="City">
+                    <button onclick="window.location.href='https://www.online-calculator.com'" class="calButton">
+                        <div id="calcButtonText">Calculate</div>
+                    </button>
+
+                </section>
+
+            </section>
+
+            <section id="social" class="social">
+                <!-- Creating icons with link to external websites -->
+                <a href="https://www.instagram.com"> <img src="./images/icons/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.twitter.com"><img src="./images/icons/twitter.svg" alt="Twitter"> </a>
+                <a href="https://www.facebook.com"> <img src="./images/icons/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.linkedin.com"> <img src="./images/icons/linkedin.svg" alt="Linkedin"></a>
+
+            </section>
+        </section>
+    </section>
+
+</body>
+
+</html>
