@@ -1,0 +1,230 @@
+#constructionContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: white;
+	padding: 80px 80px 0px 80px;
+	align-items: flex-start;
+}
+
+#constructionContainer img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#constructionTextContainer {
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	width: 100%;
+}
+
+#constructionContainer h1 {
+	font-size: 4em;
+	font-family: 'Raleway';
+	margin-top: 0px;
+	margin-bottom: 60px;
+}
+
+#constructionContainer p {
+	font-family: 'Raleway';
+	margin-bottom: 60px;
+}
+
+#aboutImage {
+	height: 300px;
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 4em;
+}
+
+.aboutImage {
+	height: 100%;
+	width: 100%;
+	object-fit: none;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#whoWhatWhereContainer {
+	background-color: #F2F2F2;
+	padding: 200px 80px 200px 80px;
+	display: flex;
+	flex-direction: row;
+}
+
+#whoWhatWhereContainer p {
+	font-family: 'Raleway';
+	line-height: 30px;
+	text-align: left;
+}
+
+#whoWhatWhereContainer h2 {
+	font-family: 'Raleway';
+}
+
+#imageBlockContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+	padding: 80px 80px 80px 80px;
+}
+
+#imageBlockContainer.white {
+	background-color: white;
+}
+
+#imageBlockContainer img {
+	height: 300px;
+	width: 500px;
+}
+
+#imageTextContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 650px;
+	padding-left: 10px;
+}
+
+#imageTextContainer h1,
+h2,
+p {
+	font-family: 'Raleway';
+}
+
+#imageTextHeading {
+	color: #26A682;
+}
+
+#imageTextContainer h2 {
+	margin: 0;
+}
+
+#imageTextContainer p {
+	font-weight: 100;
+	line-height: 30px;
+}
+
+#newsletterContainer {
+	background-color: #3C3B3A;
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+#newletterText h2 {
+	color: white;
+}
+
+#newsletterButton {
+	padding-left: 10px;
+}
+
+
+/* Setting the styling for the 'Learn More' button*/
+
+.subscribeButton {
+	padding-left: 10px;
+	border-radius: 120px;
+	background-color: #26A682;
+	width: 200%;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+}
+
+
+/* Setting the Button Text font for "Learn More" button*/
+
+.subscribeButtonText {
+	font-size: 1.2em;
+	font-family: 'Raleway';
+	color: white;
+}
+
+#sponsorContainer {
+	padding: 80px 80px 80px 80px;
+	background-color: white;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#sponsorTextInfo {
+	width: 250px;
+	text-align: center;
+}
+
+#sponsorLogoContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#sponsorImg {
+	height: 100px;
+}
+
+
+/* Setting the properties for screen size less than 1050px (for tablet)*/
+
+@media screen and (max-width: 1050px) {
+	#constructionContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#whoWhatWhereContainer {
+		background-color: #F2F2F2;
+		padding: 200px 80px 200px 80px;
+		display: flex;
+		flex-direction: column;
+	}
+	#imageBlockContainer img {
+		max-height: 800px;
+		max-width: 300px;
+	}
+	/* Setting the styling for the 'Learn More' button*/
+	.subscribeButton {
+		padding-left: 10px;
+		border-radius: 120px;
+		background-color: #26A682;
+		width: 100%;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+	}
+	#sponsorLogoContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#sponsorImg {
+		height: 100px;
+		width: 200px;
+	}
+}
+
+
+/* Setting these properties if the screen size is less than or 650px (for mobile)*/
+
+@media screen and (max-width: 650px) {
+	#imageBlockContainer img {
+		display: none;
+	}
+	#newletterText h2 {
+		font-size: 0.8em;
+	}
+	#sponsorImg {
+		height: 100px;
+		width: 150px;
+	}
+}

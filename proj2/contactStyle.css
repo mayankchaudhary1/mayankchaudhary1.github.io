@@ -1,0 +1,201 @@
+#contactContainer {
+	display: flex;
+	flex-direction: row;
+	padding: 80px 80px 80px 80px;
+	justify-content: space-between;
+	background-color: white;
+}
+
+#contactTextContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-right: 50px;
+}
+
+#pageTitle {
+	font-size: 4em;
+	font-family: 'Raleway';
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#contactTextContainer p {
+	font-size: 0.8em;
+	font-family: 'Raleway';
+}
+
+#contactImg {
+	height: 400px;
+}
+
+
+/* Setting the diplay, style properties for the input form box*/
+
+#contactForm {
+	padding: 10px 20px;
+	min-width: 30%;
+	background-color: #26A682;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-evenly;
+	box-shadow: 6px 6px 12px rgba(0, 0, 0, .5);
+	height: 600px;
+	border-radius: 8px;
+}
+
+#contactForm #formLabel {
+	color: white;
+	font-size: 0.8em;
+}
+
+
+/* Setting style properties for the input field in the form*/
+
+.formText {
+	height: 20px;
+	border-radius: 8px;
+	background-color: #F4F4F5;
+}
+
+textarea.formText {
+	height: 100px;
+}
+
+.formText {
+	height: 30px;
+}
+
+
+/* Setting the styling for 'Apply Now' text */
+
+#contactNow {
+	margin: 0px;
+	font-size: 3em;
+	color: white;
+}
+
+#submitContainer {
+	display: flex;
+	justify-content: flex-end;
+	max-width: 400px;
+}
+
+
+/* Setting the styling for the 'Apply Now' button*/
+
+.submitButton {
+	border-radius: 12px;
+	background-color: #3C3B3A;
+	color: white;
+	width: 150px;
+	height: 30px;
+}
+
+
+/* Setting the Button Text font*/
+
+.buttonText {
+	font-size: 1em;
+}
+
+#locationContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 80px 80px 80px 80px;
+	background-color: white;
+}
+
+#locationText #subTitle {
+	font-size: 2.0em;
+	font-family: 'Raleway';
+}
+
+#locationText p {
+	font-size: 0.8em;
+	font-family: 'Raleway';
+}
+
+.mapouter {
+	position: relative;
+	text-align: right;
+	height: 500px;
+	width: 100%;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none;
+	height: 500px;
+	width: 100%;
+}
+
+
+/* Setting the properties for screen size less than 1050px (for tablet)*/
+
+@media screen and (max-width: 1050px) {
+	#contactContainer {
+		display: flex;
+		flex-direction: column;
+		padding: 80px 80px 80px 80px;
+		align-items: center;
+		background-color: white;
+	}
+	#locationContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 80px 0px 80px 0px;
+		background-color: white;
+		height: 900px;
+	}
+	#locationText {
+		padding: 0px 80px;
+	}
+	#contactTextContainer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding-right: 0;
+	}
+	/* Setting the diplay, style properties for the input form box*/
+	#contactForm {
+		padding: 10px 20px;
+		width: 100%;
+		background-color: #26A682;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: space-evenly;
+		box-shadow: 6px 6px 12px rgba(0, 0, 0, .5);
+		height: 600px;
+		border-radius: 8px;
+	}
+	.mapouter {
+		text-align: center;
+		height: 500px;
+		width: 100%;
+	}
+	.gmap_canvas {
+		overflow: hidden;
+		background: none;
+		height: 500px;
+		width: 100%;
+	}
+	#submitContainer {
+		display: flex;
+		justify-content: flex-end;
+		max-width: 400px;
+	}
+}
+
+
+/* Setting these properties if the screen size is less than or 650px (for mobile)*/
+
+@media screen and (max-width: 650px) {
+	#contactTextContainer p {
+		line-height: 40px;
+	}
+}
